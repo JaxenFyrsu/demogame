@@ -20,10 +20,7 @@ Sunny started his day with…
 = AndGotBored
 ... and got bored.
 He looks around his room and reflects thinking about…
-  + 
-the chain on the table
-
-
+  + the chain on the table
         -> aJamaicanstyleRo 
 
 = aJamaicanstyleRo
