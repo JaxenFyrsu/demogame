@@ -1,9 +1,9 @@
-=== Battle_Begins
--> clickToStart
--> DONE
+* Battle_Begins
+    ** [Click any key to start the battle.]
+    -> clickToStart
+    -> DONE
 
 === clickToStart
-[Click any key to start the battle.]
 -> battleStart
 
 === battleStart
