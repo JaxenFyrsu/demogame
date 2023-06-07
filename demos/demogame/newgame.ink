@@ -7,27 +7,27 @@
 -> battleStart
 
 === battleStart
-~ heroHitPoints = 99
-~ monsterHitPoints = 43
-~ heroStrength = 3
-~ monsterStrength = 1
+VAR heroHitPoints = 99
+VAR monsterHitPoints = 43
+VAR heroStrength = 3
+VAR monsterStrength = 1
 -> Round_X
 
 === Round_X
-~ heroDamage = randomInRange(heroStrength, heroStrength + 4)
-~ monsterDamage = randomInRange(monsterStrength, monsterStrength + 4)
+temp heroDamage = DamageCalculation(heroStrength, heroStrength + 4)
+temp monsterDamage = DamageCalculation(monsterStrength, monsterStrength + 4)
 
 * heroAttack:
-    ~ monsterHitPoints = monsterHitPoints - heroDamage
+    ~ monsterHitPoints -= heroStrength
     -> checkBattleStatus
 
 * monsterCounter:
-    ~ heroHitPoints = heroHitPoints - monsterDamange
+    ~ heroHitPoints -= monsterStrength
     -> checkBattleStatus
 
 === checkBattleStatus
-~ heroHitPointsLeft = heroHitPoints
-~ monsterHitPointsLeft = monsterHitPoints
+temp heroHitPointsLeft = heroHitPoints
+temp monsterHitPointsLeft = monsterHitPoints
 
 * ((heroHitPointsLeft > 0) and (monsterHitPointsLeft > 0)) -> nextRound
 * ((heroHitPointsLeft > 0) and (monsterHitPointsLeft <= 0)) -> victory
@@ -47,7 +47,7 @@ Oh no! The hero has been defeated by the mighty monster.
 The battle ends with the hero's defeat.
 -> DONE
 
-=== function randomInRange(min, max)
-~ range = max - min + 1
-~ offset = Random(0, range - 1) + min
+=== function DamageCalculation(min, max)
+temp range = max - min + 1
+temp offset = Random() % range + min
 RETURN offset
