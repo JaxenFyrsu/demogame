@@ -1,4 +1,4 @@
-* Battle_Begins
+* Battle Begins
     ** [Click any key to start the battle.]
     -> clickToStart
     -> DONE
