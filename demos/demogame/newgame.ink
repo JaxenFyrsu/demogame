@@ -11,10 +11,11 @@ VAR heroHitPoints = 99
 VAR monsterHitPoints = 43
 VAR heroStrength = 3
 VAR monsterStrength = 1
-VAR roundCounter = 1
+VAR roundCounter = 0
 -> Round_X
 
 === Round_X
+~ roundCounter += 1
 temp heroDamage = DamageCalculation(heroStrength, heroStrength + 4)
 temp monsterDamage = DamageCalculation(monsterStrength, monsterStrength + 4)
 
@@ -47,7 +48,6 @@ temp monsterHitPointsLeft = monsterHitPoints
 * ((heroHitPointsLeft <= 0)) -> defeat
 
 === nextRound
-~ roundCounter += 1
 **** [Click any key to proceed to the next round.]
 -> Round_X
 
