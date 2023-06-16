@@ -14,8 +14,8 @@ VAR roundCounter = 0
 // RETURN offset
 
 // Begin Battle
-Battle
-* [Start]
+Battle Test
+* [Start Game]
 -> BEGIN
 
 === BEGIN
