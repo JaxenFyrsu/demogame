@@ -1,0 +1,15 @@
+{
+  "name": "demogame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JaxenFyrsu/demogame.git",
+  "author": "jaxenfysu <jdone4man@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild ./scripts/bundle.js --bundle --platform=node --outfile=index.js --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.11",
+    "jsdom": "^22.1.0"
+  }
+}
