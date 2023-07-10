@@ -6,7 +6,7 @@
   "author": "jaxenfysu <jdone4man@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "esbuild ./scripts/bundle.js --bundle --platform=node --outfile=./src/test.js --minify"
+    "build": "esbuild ./scripts/bundle.js --bundle --platform=node --outfile=test.js --minify"
   },
   "devDependencies": {
     "esbuild": "^0.18.11",
