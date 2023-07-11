@@ -1,2 +1,2 @@
-import '../project.js';
 import './calico.js';
+import '../project.js';
